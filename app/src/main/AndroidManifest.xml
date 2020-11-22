@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidlabs">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/flag"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/custom"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+        <activity android:name="com.example.finalProject.Audio.webView_Activity"></activity>
+        <activity android:name="com.example.finalProject.Navigation" />
+        <activity android:name="com.example.finalProject.Covid" /> <!-- <activity android:name="com.example.finalProject.MainActivity" /> -->
+        <activity android:name="com.example.finalProject.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.finalProject.Audio.AudioActivity" />
+    </application>
+
+</manifest>
